@@ -46,11 +46,12 @@ This command subscribes to the first broker on the local machine (`127.0.0.1`) u
 
 3. In the second terminal tab, subscribe to the second broker by running the following command:
 
+mosquitto_sub -h 127.0.0.1 -p 1222 -t "test"
+
+
+## Publish message to both brokers using one broker
+
 
 mosquitto_pub -h 127.0.0.1 -p 1222 -t "test" -m "test message to appear on both brokers"
 
-
-This command subscribes to the first broker on the local machine (`127.0.0.1`) using port `1221` and topic "test".
-
-3. In the second terminal tab, subscribe to the second broker by running the following command:
 
