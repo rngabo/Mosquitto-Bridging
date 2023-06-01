@@ -52,6 +52,8 @@ mosquitto_sub -h 127.0.0.1 -p 1222 -t "test"
 ## Publish message to both brokers using one broker
 
 
-mosquitto_pub -h 127.0.0.1 -p 1222 -t "test" -m "test message to appear on both brokers"
+mosquitto_pub -h 127.0.0.1 -p 1221 -t "bridge/to-broker2/test" -m "Hello, Kigali!" -u mosq-user1 -P Aa000000 -q 0 
+
+message to appear on both brokers"
 
 
