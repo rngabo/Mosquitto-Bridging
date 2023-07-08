@@ -38,7 +38,7 @@ This command starts the second broker in the background (`-d`) using the configu
 2. In the first terminal tab, subscribe to the first broker by running the following command:
 
 
-mosquitto_sub -h 127.0.0.1 -p 1221 -t "test"
+mosquitto_sub -h 127.0.0.1 -p 1221 -t "#"
 
 
 This command subscribes to the first broker on the local machine (`127.0.0.1`) using port `1221` and topic "test".
@@ -46,7 +46,7 @@ This command subscribes to the first broker on the local machine (`127.0.0.1`) u
 
 3. In the second terminal tab, subscribe to the second broker by running the following command:
 
-mosquitto_sub -h 127.0.0.1 -p 1222 -t "test"
+mosquitto_sub -h 127.0.0.1 -p 1222 -t "#"
 
 
 ## Publish message to both brokers using one broker
